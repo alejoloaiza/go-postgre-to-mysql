@@ -1,5 +1,5 @@
 {
-    "go.gopath":"/home/alloaiza/work/",
+    "go.gopath":"~/work/",
     "go.inferGopath": false,
     "go.buildOnSave":"package"
 }
