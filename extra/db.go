@@ -14,7 +14,7 @@ var err error
 
 func DBConnectPostgres() {
 	psqlInfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", Localconfig.PostgresDBHost, Localconfig.PostgresDBPort, Localconfig.PostgresDBUser, Localconfig.PostgresDBPass, Localconfig.PostgresDBName)
-	fmt.Println(psqlInfo)
+	//fmt.Println(psqlInfo)
 	Postgredb, err = sql.Open("postgres", psqlInfo)
 	if err != nil {
 		panic(err)
@@ -23,7 +23,7 @@ func DBConnectPostgres() {
 }
 func DBConnectMySQL() {
 	psqlInfo := fmt.Sprintf("%s:%s@/%s", Localconfig.MySQLDBUser, Localconfig.MySQLDBPass, Localconfig.MySQLDBName)
-	fmt.Println(psqlInfo)
+	//fmt.Println(psqlInfo)
 	MySqldb, err = sql.Open("mysql", psqlInfo)
 
 	if err != nil {
